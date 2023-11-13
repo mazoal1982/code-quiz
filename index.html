@@ -2,38 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="wrapper" div class="quiz-container">
-    <div class = "quiz-head">
-        <h1 class = "quiz-title">Code Quiz Challenge</h1>
-    </div class = "quiz-score flex">
-    <span id = "correct-score">0</span>/<span id = "total-question">10</span> 
-
-
-
-
-    </div>
     
+    <header>
+        <h1>Code Quiz</h1>
+    </header>
+
     
-    </div>
+    <main>
+       
+        <div id="question-container">
+            <p id="question">Question text goes here</p>
+            <button id="btn1" class="question">Question 1</button>
+            <button id="btn2" class="question">Question 2</button>
+            <button id="btn3" class="question">Question 3</button>
+            <button id="btn4" class="question">Question 4</button>
+        </div>
 
+        
+        <div id="score-container">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </main>
 
+    
+    <footer>
+        
+        <button id="start-button">Start Quiz</button>
+        
+        <p id="timer">Time: <span id="time">60</span> seconds</p>
+    </footer>
 
-    </div>
-
-
-
+    
     <script src="script.js"></script>
-
 </body>
-
-<html>
 
 </html>
